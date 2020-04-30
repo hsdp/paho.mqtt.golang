@@ -1,45 +1,36 @@
+[![GoDoc](https://godoc.org/github.com/hsdp/paho.mqtt.golang?status.svg)](https://godoc.org/github.com/hsdp/paho.mqtt.golang) [![Go Report Card](https://goreportcard.com/badge/github.com/hsdp/paho.mqtt.golang)](https://goreportcard.com/report/github.com/hsdp/paho.mqtt.golang)
 
-[![GoDoc](https://godoc.org/github.com/eclipse/paho.mqtt.golang?status.svg)](https://godoc.org/github.com/eclipse/paho.mqtt.golang)
-[![Go Report Card](https://goreportcard.com/badge/github.com/eclipse/paho.mqtt.golang)](https://goreportcard.com/report/github.com/eclipse/paho.mqtt.golang)
+# Eclipse Paho MQTT Go client
 
-Eclipse Paho MQTT Go client
-===========================
-
-
-This repository contains the source code for the [Eclipse Paho](http://eclipse.org/paho) MQTT Go client library. 
+This repository contains the source code for the [Eclipse Paho](http://eclipse.org/paho) MQTT Go client library.
 
 This code builds a library which enable applications to connect to an [MQTT](http://mqtt.org) broker to publish messages, and to subscribe to topics and receive published messages.
 
 This library supports a fully asynchronous mode of operation.
 
-
-Installation and Build
-----------------------
+## Installation and Build
 
 This client is designed to work with the standard Go tools, so installation is as easy as:
 
 ```
-go get github.com/eclipse/paho.mqtt.golang
+go get github.com/hsdp/paho.mqtt.golang
 ```
 
-The client depends on Google's [proxy](https://godoc.org/golang.org/x/net/proxy) package and the [websockets](https://godoc.org/github.com/gorilla/websocket) package, 
-also easily installed with the commands:
+The client depends on Google's [proxy](https://godoc.org/golang.org/x/net/proxy) package and the [websockets](https://godoc.org/github.com/gorilla/websocket) package, also easily installed with the commands:
 
 ```
 go get github.com/gorilla/websocket
 go get golang.org/x/net/proxy
 ```
 
+## Usage and API
 
-Usage and API
--------------
-
-Detailed API documentation is available by using to godoc tool, or can be browsed online
-using the [godoc.org](http://godoc.org/github.com/eclipse/paho.mqtt.golang) service.
+Detailed API documentation is available by using to godoc tool, or can be browsed online using the [godoc.org](http://godoc.org/github.com/hsdp/paho.mqtt.golang) service.
 
 Make use of the library by importing it in your Go client source code. For example,
+
 ```
-import "github.com/eclipse/paho.mqtt.golang"
+import "github.com/hsdp/paho.mqtt.golang"
 ```
 
 Samples are available in the `cmd` directory for reference.
@@ -48,21 +39,15 @@ Note:
 
 The library also supports using MQTT over websockets by using the `ws://` (unsecure) or `wss://` (secure) prefix in the URI. If the client is running behind a corporate http/https proxy then the following environment variables `HTTP_PROXY`, `HTTPS_PROXY` and `NO_PROXY` are taken into account when establishing the connection.
 
-
-Runtime tracing
----------------
+## Runtime tracing
 
 Tracing is enabled by assigning logs (from the Go log package) to the logging endpoints, ERROR, CRITICAL, WARN and DEBUG
 
+## Reporting bugs
 
-Reporting bugs
---------------
+Please report bugs by raising issues for this project in github https://github.com/hsdp/paho.mqtt.golang/issues
 
-Please report bugs by raising issues for this project in github https://github.com/eclipse/paho.mqtt.golang/issues 
-
-
-More information
-----------------
+## More information
 
 Discussion of the Paho clients takes place on the [Eclipse paho-dev mailing list](https://dev.eclipse.org/mailman/listinfo/paho-dev).
 

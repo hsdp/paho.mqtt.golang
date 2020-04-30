@@ -20,7 +20,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/eclipse/paho.mqtt.golang/packets"
+	"github.com/hsdp/paho.mqtt.golang/packets"
 )
 
 /**********************************************

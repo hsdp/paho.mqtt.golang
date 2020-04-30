@@ -20,12 +20,13 @@ import (
 	"flag"
 	"fmt"
 	"io"
+
 	//"log"
 	"os"
 	"strconv"
 	"time"
 
-	MQTT "github.com/eclipse/paho.mqtt.golang"
+	MQTT "github.com/hsdp/paho.mqtt.golang"
 )
 
 func main() {
